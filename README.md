@@ -28,6 +28,8 @@ Het is niet de bedoeling om een volledig opgelost spel te downloaden en dit in t
 
 Indien je twijfelt over wat al dan niet toegestaan is, stel dan een vraag op het discussieforum!
 
+Alle inzendingen worden automatisch met elkaar vergeleken met behulp van plagiaatsoftware voor code. Deze software geeft een score van gelijkaardigheid aan projecten. De projecten die het meest op elkaar lijken worden nadien manueel nagekeken.
+
 ## Deadline
 
 De *deadline* voor dit practicum is **zondag 17 november 2019** om **23u59**.
@@ -38,11 +40,11 @@ Indien je toch laattijdig moet indienen kunnen we je nog toegang geven tot de re
 ## Verdediging
 
 De verdedigingen van het practicum gaan door op 19 en 20 november. 
-De praktische planning volgt later op Toledo.
+De praktische planning en lokaalverdeling volgt later op Toledo.
 
 Op de verdediging krijgen jullie 1 uur tijd om enkele kleine uitbreidingen te maken op basis van jullie ingediende oplossing.
 Hierbij mag internet gebruikt worden, *behalve* om te communiceren met medestudenten.
-Nadien zullen jullie 15 minuten krijgen om jullie oplossing te tonen en uit te leggen aan een assistent.
+Nadien krijgen jullie tijd om de oplossing te tonen en uit te leggen aan een assistent.
 
 De verdediging is een examenmoment, behandel dit ook zo.
 **Zorg ervoor dat je op tijd aanwezig bent op je toegekende moment.**
@@ -73,6 +75,9 @@ Het project wordt ingediend met behulp van *git*.
 Zorg ervoor dat alle bestanden van je oplossing toegevoegd zijn aan je git repository en gepusht zijn naar de master branch voor de deadline.
 **Alle repositories worden afgesloten na de deadline!**
 
+Het is ook een goed idee om regelmatig gedurende het maken van je project je bestanden te committen en pushen met git.
+Zo heb je altijd een back-up van je code.
+
 ``` bash
 
 $ git add index.html
@@ -82,7 +87,7 @@ $ git commit -m "Oplossing practicum"
 $ git push origin master
 ```
 
-*Controleer* dit door je eigen repository opnieuw te clonen in een tijdelijke folder.
+*Controleer* je inzending door je eigen repository opnieuw te clonen in een tijdelijke folder.
 
 ``` bash
 $ cd /tmp
@@ -179,7 +184,7 @@ Aan het begin van het spel plaatsen beide spelers tien verschillende schepen op 
 Een schip is telkens 1 vakje breed en kan 1 tot 5 vakjes lang zijn.
 Schepen kunnen horizontaal of verticaal geplaatst worden.
 
-Twee schepen mogen elkaar niet aan elkaar grenzen.
+Twee schepen mogen niet aan elkaar grenzen.
 
 Wanneer beide spelers alle schepen geplaatst hebben start het spel.
 
@@ -205,9 +210,9 @@ In deze sectie beschrijven we de functionaliteit die we verwachten dat jullie im
 * Voorzie een knop op een nieuw spel te starten.
 * Toon een timer die aangeeft hoe lang het huidige spel reeds aan de gang is.
 * Toon beide spelborden naast elkaar.
-* De boten van speler A zijn volledig zichtbaar.
-* De boten van speler B (de computer) zijn verborgen, tenzij de boot gezonken is.
-* Elke "hit" en elke "miss" op het spelbord wordt visueel gemarkeerd.
+* De boten van speler A zijn altijd volledig zichtbaar.
+* De boten van speler B (de computer) zijn verborgen, tenzij de boot volledig gezonken is.
+* Elke "hit" en elke "miss" op het spelbord wordt visueel gemarkeerd. Deze markering blijft zichtbaar tot het einde van het spel.
 
 ### Bordopstelling
 
@@ -236,7 +241,7 @@ Bij de start van het spel is het de beurt aan speler A.
 
 * Kies een vakje op het spelbord van speler B door erop te klikken.
 * Het spel geeft nu visueel aan of deze keuze een hit of een miss was.
-* Wanneer alle vakjes van een boot op het spelbord van speler B geraakt zijn wordt deze boot zichtbaar.
+* Wanneer alle vakjes van een boot op het spelbord van speler B geraakt zijn, wordt deze boot zichtbaar.
 * De beurt gaat naar speler B.
 
 #### Beurt speler B
