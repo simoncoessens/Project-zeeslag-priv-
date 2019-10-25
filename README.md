@@ -181,7 +181,7 @@ Het bord van de tegenspeler is verborgen.
 ### Opstelling
 
 Aan het begin van het spel plaatsen beide spelers tien verschillende schepen op hun spelbord, op een positie naar keuze.
-Een schip is telkens 1 vakje breed en kan 1 tot 5 vakjes lang zijn.
+Een schip is telkens 1 vakje breed en kan 1 tot 6 vakjes lang zijn.
 Schepen kunnen horizontaal of verticaal geplaatst worden.
 
 Twee schepen mogen niet aan elkaar grenzen.
